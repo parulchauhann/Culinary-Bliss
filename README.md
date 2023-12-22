@@ -29,3 +29,5 @@ Mobile View:  https://www.figma.com/proto/MCHI8oEFnEPJcw3ZmvbsN4/Food-Website?pa
 
 ## Github Deployed Link: 
 https://parulchauhann.github.io/Culinary-Bliss/
+
+### Let the random meals surprise and inspire you, and let the flavors of the world unfold in your kitchen!
