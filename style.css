@@ -1,0 +1,681 @@
+@import url('https://fonts.googleapis.com/css2?family=Carattere&family=Stardos+Stencil:wght@700&family=Stylish&family=Suez+One&family=Unlock&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.logo {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+}
+
+#logo {
+    padding: 1vw;
+}
+
+#header {
+    font-size: 3vw;
+    font-family: Stardos Stencil, sans-serif;
+}
+
+#container1 {
+    display: flex;
+    align-items: center;
+}
+
+.profile {
+    width: 70px;
+    height: 70px;
+}
+
+#profile {
+    padding: 1vw 2vw 1vw 1vw;
+}
+
+.home {
+    font-family: Stylish;
+    width: 5.5vw;
+    padding: .3vw;
+    font-weight: 600;
+    font-size: 1.5vw;
+    border-radius: 10%;
+    background-color: white;
+    border: 2.5px solid black;
+}
+
+.home:hover {
+    color: white;
+    border: 2.5px solid white;
+    background-color: rgb(253, 62, 62);
+}
+
+#home {
+    padding: 1vw;
+}
+
+#discover {
+    padding: 1vw 0vw 1vw 1vw;
+}
+
+#container2 {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    background-color: #FDAFAF;
+    width: 100%;
+    position: sticky;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#welcome {
+    margin-top: 5vh;
+    font-size: 2.8vw;
+    font-family: Stylish;
+}
+
+#quote {
+    margin: 0vw 1vw 1vw 1vw;
+    font-size: 2.8vw;
+    color: #F02020;
+    font-weight: bold;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    font-family: Carattere;
+}
+
+#description {
+    margin: 3.5vw;
+    font-size: 1.8vw;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#searchText {
+    margin: 6vw 2vw 2vw 2vw;
+    font-size: 2vw;
+    color: #332c2c;
+    font-weight: lighter;
+    font-family: Suez One;
+}
+
+#searchBox {
+    width: 30vw;
+    height: 7vh;
+    font-size: 1.2vw;
+    text-align: left;
+    padding: .6vw;
+    border: none;
+    background-color: #E2E2E2;
+}
+
+#searchBox:hover {
+    background-color: #bdbaba;
+}
+
+#search {
+    width: fit-content;
+    height: 4vh;
+    padding: .1vw;
+}
+
+#searchButton {
+    width: 3.8vw;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FDAFAF;
+    cursor: pointer;
+}
+
+#searchButton:hover {
+    background-color: #ff8484;
+}
+
+#inputBox {
+    margin: 2vw 0vw 6vw 0vw;
+    display: flex;
+    justify-content: center;
+}
+
+#hr1 {
+    width: 75%;
+    margin: auto;
+}
+
+#randomHeader {
+    margin: 4vw 0vw 2vw 0vw;
+    font-size: 3vw;
+    color: #F80303;
+    font-family: Unlock;
+}
+
+.randomName {
+    padding: 1vw;
+    font-size: 1.5vw;
+    font-family: Unlock;
+    width: 34vw;
+    margin: auto;
+    margin-bottom: 5vw;
+    text-align: center;
+}
+
+.meal-item {
+    width: fit-content;
+    margin: auto;
+    transition: transform 0.1s ease-in-out;
+}
+
+.meal-item:hover {
+    transform: scale(1.08);
+    cursor: pointer;
+}
+
+.randomImage {
+    width: 35vw;
+    height: 30vw;
+    margin: auto;
+    border-radius: 10%;
+    border: 3px solid #F80303;
+}
+
+#hr2 {
+    width: 100%;
+    margin: auto;
+}
+
+#leftText {
+    display: flex;
+    font-size: 1vw;
+    justify-content: space-between;
+}
+
+#rightText {
+    display: flex;
+    font-size: 1vw;
+    justify-content: space-between;
+}
+
+.name {
+    color: #DD6161;
+    font-size: 1vw;
+    cursor: pointer;
+}
+
+.name:hover {
+    color: rgb(88, 88, 252);
+}
+
+#footerPartOne {
+    margin: 4vw 4vw 0vw 4vw;
+    display: flex;
+    justify-content: space-between;
+}
+#logo2 {
+    width: 75px;
+    height: 75px;
+    margin-top: 2vw;
+    border-radius: 50%;
+}
+
+#footerName {
+    font-size: 2vw;
+    margin-top: 2vw;
+    margin-left: 1vw;
+    font-family: Stardos Stencil, sans-serif;
+}
+
+#bottomLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2vw;
+}
+
+#blockImg {
+    width: 100%;
+    height: 210px;
+    border-radius: 10%;
+    border: 2.5px solid black;
+}
+
+#foodResults {
+    text-align: center;
+    display: none;
+    grid-template-columns: repeat(4, 25vw);
+}
+
+#headLine {
+    text-align: center;
+    display: none;
+    margin-top: 12vh;
+    margin-bottom: 2vw;
+    font-size: 2.8vw;
+    font-family: Unlock;
+}
+
+.block {
+    margin: 3vw 2vw 2vw 3vw;
+    width: fit-content;
+    height: 39vh;
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: 700;
+    color: #fa3b3b;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.block:hover {
+    transform: scale(1.08);
+}
+
+#ingredientsPage {
+    display: none;
+    overflow-y: scroll;
+    width: 70vw;
+    height: 35vw;
+    margin: auto;
+    position: fixed;
+    top: 25%;
+    left: 15vw;
+    cursor: pointer;
+    background-color: #f78080e5;
+    border: 3px solid #332c2c ;
+    text-align : left;
+    justify-content: space-evenly;
+}
+
+#ingridientItems {
+    color: white;
+    margin-top: 2vw;
+    margin-left: 2vw;
+    text-align: center;
+}
+
+#recipe {
+    text-align: left;
+    margin-top: 2vw;
+    margin-left: 2vw;
+    font-size: 1.5vw;
+    padding: .5vw;
+    color: white;
+    margin-bottom: 1vw;
+}
+
+#ingridientItems li {
+    text-align: left;
+    padding-right: .5vw;
+    margin-top: 0.5vw;
+    margin-left: 2vw;
+    font-size: 1.5vw;
+    margin-right: 2vw;
+}
+
+#ingridientItems h2, #recipe h2 {
+    color: black;
+    padding-bottom: 1vw;
+    font-family: Stylish;
+    font-size: 2.3vw;
+}
+
+#closeButton {
+    display: none;
+    width: 4vw;
+    height: 4vw;
+    left: 48vw;
+    margin: auto;
+    cursor: pointer;
+    border: 2px solid #332c2c;
+    font-weight: 600;
+    position: fixed;
+    top: 10%;
+    font-size: 3vw;
+    border-radius: 10%;
+    background-color: #fdafafe5;
+    transition: transform 0.1s ease-in-out;
+}
+
+#closeButton:hover {
+    transform: scale(1.08);
+    background-color: #ff6464e5;
+}
+
+#closeButton span {
+    margin: auto;
+}
+
+footer {
+    width: 100%;
+    background-color: white;
+}
+
+@media all and (orientation: portrait) {
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    #header {
+        font-size: 4vw;
+    }
+
+    .profile {
+        width: 40px;
+        height: 40px;
+    }
+
+    .home {
+        width: 6.5vw;
+        font-size: 1.8vw;
+    }
+
+    #welcome {
+        font-size: 3.8vw;
+    }
+
+    #quote {
+        font-size: 3.5vw;
+    }
+
+    #description {
+        font-size: 2.3vw;
+    }
+
+    #searchText {
+        font-size: 3vw;
+    }
+
+    #searchBox {
+        width: 45vw;
+        height: 5vh;
+        font-size: 2vw;
+        padding: 1vw;
+    }
+
+    #search {
+        width: fit-content;
+        padding: .3vw;
+    }
+
+    #searchButton {
+        width: 7vw;
+        height: 5vh;
+    }
+
+    #randomHeader {
+        font-size: 4vw;
+    }
+
+    .randomName {
+        padding: 1vw;
+        font-size: 2vw;
+        width: fit-content;
+    }
+
+    .randomImage {
+        width: 35vw;
+        height: 30vw;
+    }
+
+    #leftText {
+        font-size: 2vw;
+    }
+
+    #rightText {
+        font-size: 2vw;
+    }
+
+    .name {
+        font-size: 2vw;
+    }
+
+    #logo2 {
+        width: 45px;
+        height: 45px;
+    }
+
+    #footerName {
+        font-size: 3vw;
+    }
+
+    #bottomLogo {
+        margin-bottom: 0vw;
+    }
+
+    #foodResults {
+        grid-template-columns: repeat(2, 50vw);
+    }
+
+    #headLine {
+        margin-top: 8vh;
+        font-size: 3.5vw;
+    }
+
+    .block {
+        font-size: 2.5vw;
+        width: 40vw;
+    }
+    
+    #recipe {
+        font-size: 2.2vw;
+    }
+    
+    #ingridientItems li {
+        font-size: 2.2vw;
+    }
+    
+    #ingridientItems h2, #recipe h2 {
+        font-size: 2.8vw;
+    }
+    
+    #closeButton {
+        font-size: 3vw;
+    }
+}
+
+@media all and (max-width: 400px) {
+
+    #foodResults {
+        grid-template-columns: repeat(1, 90vw);
+    }
+
+    #headLine {
+        margin-top: 8vh;
+        font-size: 3.5vw;
+    }
+
+    #blockImg {
+        width: 280px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .block {
+        width: fit-content;
+        height: 39vh;
+        font-size: 2.8vw;
+    }
+
+    footer{
+       position: fixed;
+       bottom: 0;    
+    }
+
+    #recipe {
+        font-size: 2.2vw;
+    }
+    
+    #ingridientItems li {
+        font-size: 2.2vw;
+    }
+    
+    #ingridientItems h2, #recipe h2 {
+        font-size: 2.8vw;
+    }
+    
+    #closeButton {
+        font-size: 3vw;
+    }
+}
+
+@media all and (max-width: 399.9px) {
+    .logo {
+        width: 45px;
+        height: 45px;
+    }
+
+    .profile {
+        width: 25px;
+        height: 25px;
+    }
+
+    .home {
+        width: 7.5vw;
+        font-size: 2vw;
+    }
+    
+    #search {
+        width: 1vw;
+        padding: 1vw;
+    }
+
+    #searchButton {
+        width: 8vw;
+        height: 4vh;
+    }
+
+    .block {
+        margin-left: 20vw;
+        height: 70vw;
+    }
+
+    #blockImg {
+        width: 210px;
+        height: 180px;
+    }
+
+    #ingredientsPage {
+        width: 70vw;
+        height: 50vw;
+        left: 15vw;
+    }
+}
+
+@media all and (max-width: 550px) {
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    #header {
+        font-size: 5vw;
+    }
+
+    .profile {
+        width: 40px;
+        height: 40px;
+    }
+
+    .home {
+        width: 7.5vw;
+        font-size: 2vw;
+    }
+
+    #welcome {
+        font-size: 4vw;
+        margin: 7vw 0vw 3vw 0vw;
+    }
+
+    #quote {
+        font-size: 4vw;
+        margin-bottom: 3vw;
+    }
+
+    #description {
+        font-size: 3vw;
+        margin: 5vw;
+    }
+
+    #searchText {
+        font-size: 3vw;
+        margin-top: 7vw;
+        margin-bottom: 5vw;
+    }
+
+    #searchBox {
+        width: 40vw;
+        height: 4vh;
+        font-size: 2.3vw;
+        padding: 1vw;
+    }
+
+    #search {
+        width: fit-content;
+        padding: 1vw;
+    }
+
+    #searchButton {
+        width: 8vw;
+        height: 4vh;
+    }
+
+    #hr1 {
+        margin-top: 8vw;
+    }
+
+    #randomHeader {
+        font-size: 5vw;
+    }
+    
+    .randomName {
+        font-size: 2vw;
+    }    
+
+    footer{
+        position: fixed;
+        bottom: 0;    
+    }
+
+    #ingredientsPage {
+        width: 70vw;
+        height: 50vw;
+        left: 15vw;
+    }
+
+    #recipe {
+        font-size: 2.8vw;
+    }
+    
+    #ingridientItems li {
+        font-size: 2.8vw;
+    }
+    
+    #ingridientItems h2, #recipe h2 {
+        font-size: 3.3vw;
+    }
+    
+    #closeButton {
+        font-size: 3.8vw;
+        width: 6vw;
+        height: 6vw;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    footer {
+        position: fixed;
+        bottom: 0;
+    }
+}
